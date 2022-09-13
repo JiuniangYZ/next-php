@@ -1,17 +1,16 @@
 import {
-  renderToString,
   renderToStaticMarkup
 } from 'react-dom/server'
 const Home3 = (param) => {
   return (
-    <div
+    <button
       handle_click='add_count'
-    >hey jude {param.count} </div>
+    >hey jude {param.count} </button>
   )
 }
 
 const status = {
-  count:1
+  count:1,
 }
 
 const addCount = ()=>{
